@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.projectv"
+       name="Project-TV"
+       version="1.0"
+       provider-name="StreaMex">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>StreaMex Presenta</summary>
+    <description>Mi lista para Amigos y Familiares</description>
+
+   <platform>all</platform>
+  </extension>
+</addon>
+
+<addon
+  id="plugin.video.SportsDevil"
+  version="150914-1.8.8.0"
+  name="SportsDevil"
+  provider-name="MaxMustermann">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.requests" />
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Play videos of different sports streaming sites</summary>
+    <description>Play videos of different Channels streaming sites Updated DMO: 14/09/2015 (from HUBBA3´s Version 14/09/2015)... +Info in Change Log - +Info en Registro de Cambios (Gracias Goldonx, Quequeq y Jxxxxxx!!)... Soporte para p2p con Plugin PLEXUS</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.projectv" name="ProjecTV By StreaMex Repo" version="1.0.0" provider-name="ProjecTV">
+	<extension point="xbmc.addon.repository" name="ProjecTV By StreaMex Repo">
+		<info compressed="false">https://raw.github.com/streamexMX/ProjecTV/master/addons.xml</info>
+		<checksum>https://raw.github.com/kodimexico/miNuevoRepo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/kodimexico/miNuevoRepo/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>ProjecTV By StreaMex Repo</summary>
+   		<description lang="en">Entretenimiento Digital By StreaMex</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+</addons>
